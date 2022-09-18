@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{@apply bg-[url('../src/img/sea.jpg')] bg-cover h-screen flex flex-col items-center}
+
+
+.kart{
+    @apply relative w-44 h-full bg-amber-400 inline-block mr-4 transition-all duration-500 shadow-lg shadow-[#00000062] rounded-xl bg-cover;
+    scroll-snap-align: start;
+    scroll-margin-left: 10px;
+}
+.kart span{
+    @apply absolute left-3 bottom-3 text-2xl text-white font-black;
+    text-shadow: 0 0 10px black;
+}
+.kart:hover{
+    @apply scale-[1.1]
+}
+.kartlar{
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+.kartlar::-webkit-scrollbar{
+    display: none;
+}
+
+button{@apply bg-red-500 rounded p-2}

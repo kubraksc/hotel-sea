@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Vacation</title>
+</head>
+
+<body>
+    <header class="w-full max-w-[1200px] p-8 flex justify-between items-center">
+        <img src="./img/logoo.png" alt="" class="">
+        <div class="flex gap-x-10 items-center text-white">
+            <nav class="text-white flex gap-x-6 font-bold">
+                <a href="#">HOME</a>
+                <a href="#">TOURS</a>
+                <a href="#">EXPLORE</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">CONTACT</a>
+            </nav>
+            <i class="fa-solid fa-magnifying-glass text-xl"></i>
+            <div class="flex gap-x-6 items-center text-xl">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex-1 w-full py-14 pl-28 pr-0 flex gap-x-10">
+        <!-- sol taraf -->
+        <div class="flex-[2] h-full flex flex-col gap-y-4 items-start">
+            <p class="text-koyumavi text-sm">Travel website</p>
+            <h1 class="text-koyumavi text-6xl font-bold tracking-tighter">NEVER STOP EXPLORING THE WORLD.</h1>
+            <p class="text-koyumavi text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt amet magni ea reiciendis expedita tenetur praesentium possimus, non illum unde.</p>
+            <button class="bg-acikmavi text-white px-5 py-2 rounded-xl text-xs font-bold shadow-lg shadow-[#0b6368]">LEARN MORE</button>
+        </div>
+        <!-- sağ taraf -->
+        <div class="flex-[3] h-full overflow-hidden">
+            <div class="kartlar w-full h-[22rem] whitespace-nowrap overflow-x-auto p-7">
+                <div class="kart bg-[url('../src/img/sea2.jpg')]">
+                    <span>TROPICAL</span>
+                </div>
+                <div class="kart bg-[url('../src/img/sea5.jpg')]">
+                    <span>BEACH</span>
+                </div>
+                <div class="kart bg-[url('../src/img/sea6.jpg')]">
+                    <span>SWIM</span>
+                </div>
+                <div class="kart bg-[url('../src/img/sea7.jpg')]">
+                    <span>POOL</span>
+                </div>
+                <div class="kart bg-[url('../src/img/sea1.jpg')]">
+                    <span>NATURE</span>
+                </div>
+                <div class="kart bg-[url('../src/img/sea4.jpg')]">
+                    <span>HOTEL</span>
+                </div>
+                <div class="kart bg-[url('../src/img/sea3.jpg')]">
+                    <span>PASSION</span>
+                </div>
+            </div>
+            <div class="flex gap-x-5 text-white mt-3 items-center">
+                <div class="flex gap-x-5 text-4xl">
+                    <i id="solBtn" class="fa-regular fa-circle-left cursor-pointer"></i>
+                    <i id="sagBtn" class="fa-regular fa-circle-right cursor-pointer"></i>
+                </div>
+                <div class="flex-1 bg-white h-[0.10rem]"></div>
+                <div class="text-4xl font-bold pr-28">01</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
